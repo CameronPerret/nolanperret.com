@@ -1,198 +1,362 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nolan Perret – Official Sucker Statement</title>
-  <meta name="description" content="An extremely official, definitely self-authored declaration by Nolan Perret that he is—affectionately—a total sucker." />
+  <title>Nolan Perret – Official Sucker Site</title>
+  <meta name="description"
+    content="A first‑person confession from Nolan Perret. Same sucker theme, plus a tasteful dossier on his fantasy football management performance." />
   <link rel="canonical" href="https://nolanperret.com/" />
   <!-- Social / Open Graph -->
-  <meta property="og:title" content="Nolan Perret – Official Sucker Statement" />
-  <meta property="og:description" content="I, Nolan Perret, hereby acknowledge I'm a lovable sucker. This site is 100% real and not a prank (probably)." />
+  <meta property="og:title" content="Nolan Perret – Official Sucker Site" />
+  <meta property="og:description"
+    content="Yes, I built this. Yes, I am the sucker. Also: my fantasy moves are under formal review." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://nolanperret.com/" />
   <meta name="twitter:card" content="summary_large_image" />
   <style>
-    :root{
-      --bg:#0e1320; --card:#0b1220; --ink:#e8f0ff; --muted:#a0acc4;
-      --accent:#ffb703; --accent-2:#fb7185; --ok:#22c55e; --ring:rgba(255,255,255,.08);
-      --radius:20px;
+    :root {
+      --bg: #0e1320;
+      --card: #0b1220;
+      --ink: #e8f0ff;
+      --muted: #a0acc4;
+      --accent: #ffb703;
+      --accent-2: #fb7185;
+      --ok: #22c55e;
+      --ring: rgba(255, 255, 255, .08);
+      --radius: 20px;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; background:
-        radial-gradient(1200px 600px at 10% 10%, rgba(251,113,133,.06), transparent 40%),
-        radial-gradient(900px 500px at 90% 90%, rgba(255,183,3,.04), transparent 40%),
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 600px at 10% 10%, rgba(251, 113, 133, .06), transparent 40%),
+        radial-gradient(900px 500px at 90% 90%, rgba(255, 183, 3, .04), transparent 40%),
         var(--bg);
-      color:var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
-      display:grid; place-items:center; padding:32px;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
-    .wrap{ width:min(980px, 96%); }
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
-      border:1px solid var(--ring); border-radius:var(--radius);
-      box-shadow:0 10px 50px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.04);
-      padding:28px; position:relative; overflow:hidden;
+
+    .wrap {
+      width: min(980px, 96%);
     }
-    .brand{display:flex; align-items:center; gap:12px; margin-bottom:8px}
-    .brand .logo{width:54px; height:54px; border-radius:14px; display:grid; place-items:center; font-weight:800; color:#0a0f1a; background:linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow:0 8px 24px rgba(251,113,133,.18)}
-    h1{margin:0; font-size:clamp(28px, 5vw, 40px); letter-spacing:-.02em}
-    .sub{color:var(--muted); margin:6px 0 18px 0}
 
-    .hero{display:flex; gap:28px; align-items:center; flex-wrap:wrap}
-    .left{flex:1 1 380px; min-width:280px}
-    .right{flex:0 0 320px; min-width:260px; text-align:center}
-
-    .certificate{
-      border:1px dashed var(--ring); border-radius:16px; padding:18px;
-      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .015));
+      border: 1px solid var(--ring);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 50px rgba(0, 0, 0, .45), inset 0 1px 0 rgba(255, 255, 255, .04);
+      padding: 28px;
+      position: relative;
+      overflow: hidden;
     }
-    .kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:700}
-    .certificate h2{margin:8px 0 4px 0; font-size:22px}
-    .certificate p{margin:0; color:var(--muted)}
-    .seal{display:inline-block; padding:6px 10px; border-radius:8px; background:linear-gradient(90deg, #fff1cc, #ffd166); color:#222; font-weight:800; margin-top:10px}
 
-    .badge{
-      display:inline-flex; align-items:center; gap:8px; border-radius:999px; padding:8px 12px;
-      background:rgba(255,255,255,.04); border:1px solid var(--ring); margin-top:12px; font-weight:700;
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px
     }
-    .big{font-size:clamp(26px, 4.5vw, 34px); font-weight:900; margin-top:4px}
 
-    .face{width:180px; height:180px; border-radius:999px; display:grid; place-items:center; font-size:52px; font-weight:900; color:var(--accent-2);
-      margin:0 auto 12px auto; border:6px solid var(--ring); transform:rotate(-6deg);
-      background:linear-gradient(135deg, rgba(255,255,255,.03), rgba(255,255,255,.01)); box-shadow:0 18px 42px rgba(0,0,0,.5)}
-
-    .btns{display:flex; gap:10px; justify-content:center; margin-top:10px}
-    .btn{appearance:none; border:none; cursor:pointer; padding:10px 14px; border-radius:12px; font-weight:800}
-    .btn.primary{background:var(--accent); color:#0b0f19}
-    .btn.ghost{background:transparent; color:var(--ink); border:1px solid var(--ring)}
-
-    footer{margin-top:18px; color:var(--muted); font-size:13px; text-align:center}
-
-    .confetti{position:absolute; inset:0; pointer-events:none; mix-blend-mode:screen; opacity:.9;
-      background-image:
-        radial-gradient(circle at 12% 22%, rgba(251,113,133,.09) 0 2px, transparent 2px),
-        radial-gradient(circle at 32% 76%, rgba(34,197,94,.08) 0 2px, transparent 2px),
-        radial-gradient(circle at 80% 30%, rgba(255,183,3,.09) 0 2px, transparent 2px);
-      animation:float 10s ease-in-out infinite
+    .brand .logo {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      color: #0a0f1a;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 8px 24px rgba(251, 113, 133, .18)
     }
-    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-8px)}100%{transform:translateY(0)}}
 
-    @media (max-width:760px){ .hero{flex-direction:column-reverse} .right{flex:1 1 auto} }
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 5vw, 40px);
+      letter-spacing: -.02em
+    }
+
+    .sub {
+      color: var(--muted);
+      margin: 6px 0 18px 0
+    }
+
+    .hero {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      flex-wrap: wrap
+    }
+
+    .left {
+      flex: 1 1 420px;
+      min-width: 280px
+    }
+
+    .right {
+      flex: 0 0 320px;
+      min-width: 260px
+    }
+
+    .notice {
+      border: 1px solid var(--ring);
+      border-radius: 16px;
+      padding: 18px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .01));
+    }
+
+    .kicker {
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700
+    }
+
+    .notice h2 {
+      margin: 8px 0 8px 0;
+      font-size: 22px
+    }
+
+    .notice p {
+      margin: 0 0 10px 0;
+      color: var(--muted)
+    }
+
+    .seal {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #fff1cc, #ffd166);
+      color: #222;
+      font-weight: 800;
+      margin-top: 10px
+    }
+
+    .portrait {
+      margin: 0;
+    }
+
+    .portrait img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 16px;
+      border: 6px solid var(--ring);
+      display: block
+    }
+
+    .portrait figcaption {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 8px;
+      text-align: center
+    }
+
+    .ff-card {
+      margin-top: 18px;
+      border: 1px solid var(--ring);
+      border-radius: 16px;
+      padding: 16px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .005));
+    }
+
+    .ff-title {
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin: 0 0 10px 0
+    }
+
+    .ff {
+      width: 100%;
+      border-collapse: collapse
+    }
+
+    .ff th,
+    .ff td {
+      padding: 8px 10px;
+      text-align: left;
+      border-bottom: 1px dashed var(--ring)
+    }
+
+    .ff th {
+      color: var(--muted);
+      font-weight: 700;
+      width: 38%
+    }
+
+    .ff tr:last-child th,
+    .ff tr:last-child td {
+      border-bottom: none
+    }
+
+    .list {
+      margin: 12px 0 0 0;
+      padding-left: 18px;
+      color: var(--muted)
+    }
+
+    .list li {
+      margin: 6px 0
+    }
+
+    footer {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center
+    }
+
+    @media (max-width:760px) {
+      .hero {
+        flex-direction: column
+      }
+
+      .right {
+        order: -1;
+        width: 100%
+      }
+    }
   </style>
 </head>
+
 <body>
   <main class="wrap">
     <section class="card" role="main" aria-labelledby="title">
       <div class="brand">
         <div class="logo">NP</div>
         <div>
-          <h1 id="title">Hi, I'm Nolan. And yes… I'm a sucker.</h1>
-          <p class="sub">This is my totally self-authored statement. No pranks involved. Definitely me typing this. For sure.</p>
+          <h1 id="title">Hi, I’m Nolan. Yes, I’m the sucker.</h1>
+          <p class="sub">This is my site. I wrote it. Unfortunately, it’s accurate.</p>
         </div>
       </div>
 
       <div class="hero">
-        <div class="left">
-          <div class="certificate">
-            <div class="kicker">Certificate of Radical Honesty</div>
-            <h2>I, <span id="name">Nolan Perret</span>, do solemnly declare:</h2>
-            <p id="pledge">From impulse buys to losing bets with my brother, I consistently demonstrate elite, world‑class <strong>sucker</strong> energy. And I own it.</p>
-            <span class="seal" id="dateSeal">Signed on <span id="dateText"></span></span>
-            <div class="badge" id="badge"><span>🏅 Status:</span><span class="status-text">Certified Sucker</span></div>
-            <div class="big" id="bigLine">“I'm not just a sucker — I'm <em>the</em> sucker.”</div>
-          </div>
-          <footer>© <span id="year"></span> Nolan Perret. All rights reserved. This is absolutely not written under duress.</footer>
-        </div>
+        <!-- RIGHT: Photo + Fantasy block -->
+        <aside class="right">
+          <!-- Replace photo filename after you upload it to S3 (e.g., nolan.jpg at bucket root) -->
+          <figure class="portrait">
+            <img id="headshot" src="nolan.jpg" alt="Nolan Perret"
+              onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'600\'%3E%3Crect width=\'100%25\' height=\'100%25\' fill=\'%230b1220\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23a0acc4\' font-family=\'Inter,Arial\' font-size=\'22\'%3ENo photo uploaded (nolan.jpg)%3C/text%3E%3C/svg%3E'">
+            <figcaption>Exhibit A.</figcaption>
+          </figure>
 
-        <div class="right">
-          <div class="face" id="face">😏</div>
-          <div id="oneLiner" class="big">Sucker level: <span id="meter">MAX</span></div>
-          <div class="btns">
-            <button class="btn primary" onclick="toggleTone()">Toggle: Serious / Playful</button>
-            <button class="btn ghost" onclick="downloadPNG()">Download Proof</button>
+          <div class="ff-card" aria-labelledby="ffTitle">
+            <h3 id="ffTitle" class="ff-title">Fantasy Manager Dossier</h3>
+            <table class="ff">
+              <tbody>
+                <tr>
+                  <th>Managed Team</th>
+                  <td id="ffTeam">Cameron’s Team</td>
+                </tr>
+                <tr>
+                  <th>League</th>
+                  <td id="ffLeague">Perret Pirates</td>
+                </tr>
+                <tr>
+                  <th>Record</th>
+                  <td id="ffRecord">1-4</td>
+                </tr>
+                <tr>
+                  <th>Standing</th>
+                  <td id="ffStanding">11th of 12</td>
+                </tr>
+                <tr>
+                  <th>Last week</th>
+                  <td id="ffLastWeek">L 115–116</td>
+                </tr>
+                <tr>
+                  <th>Notable Decision</th>
+                  <td id="ffMove">Benched a 19‑pt TE for vibes</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </aside>
+
+        <!-- LEFT: Sucker theme + notes -->
+        <div class="left">
+          <div class="notice">
+            <div class="kicker">Official Sucker Statement</div>
+            <h2>On being a sucker</h2>
+            <p>I, <strong>Nolan Perret</strong>, acknowledge a consistent display of premium‑grade sucker energy. This
+              includes (but is not limited to) impulse decisions, optimistic trades, and unwavering belief that “this
+              week is the week.”</p>
+
+            <h2>On managing Cameron’s fantasy team</h2>
+            <p>Yes, I’m managing it. No, it’s not going great. Highlights from the audit committee:</p>
+            <ul class="list" id="notes">
+              <li>Set a lineup without checking inactives; learned a lot that day.</li>
+              <li>Traded for a “buy‑low” WR who continued to explore historic lows.</li>
+              <li>Started a DST against a top‑3 offense. It was educational.</li>
+              <li>Left exactly 23.4 points on the bench because of a gut feeling.</li>
+            </ul>
+
+            <p>Remedial plan: read one article <em>before</em> waivers, verify actives, and stop drafting kickers before
+              RB2.</p>
+            <span class="seal" id="dateSeal">Filed on <span id="dateText"></span></span>
+          </div>
+          <footer>© <span id="year"></span> Nolan Perret. Authored by me, tragically.</footer>
         </div>
       </div>
-
-      <div class="confetti" aria-hidden="true"></div>
     </section>
   </main>
 
   <script>
-    // Initialize date & year
-    (function(){
+    // === Configuration (edit these to personalize) ===
+    const CONFIG = {
+      team: "Cameron’s Team",
+      league: "Perret Premier",
+      record: "2–7",
+      standing: "10th of 10",
+      lastWeek: "L 82–141",
+      notableMove: "Benched a 25‑pt RB for vibes",
+      photo: "nolan.jpg", // Upload to bucket root
+      notes: [
+        "Forgot to swap an inactive out of FLEX.",
+        "Assumed a questionable tag meant ‘questionably elite’.",
+        "Spent FAAB like it was Monopoly money.",
+        "Promised a bounce‑back week; bounced the wrong way."
+      ]
+    };
+
+    // Apply config + dates
+    (function () {
       const now = new Date();
       document.getElementById('dateText').textContent = now.toLocaleDateString();
       document.getElementById('year').textContent = now.getFullYear();
-    })();
+      // Fantasy details
+      const set = (id, v) => document.getElementById(id).textContent = v;
+      set('ffTeam', CONFIG.team);
+      set('ffLeague', CONFIG.league);
+      set('ffRecord', CONFIG.record);
+      set('ffStanding', CONFIG.standing);
+      set('ffLastWeek', CONFIG.lastWeek);
+      set('ffMove', CONFIG.notableMove);
+      if (CONFIG.photo) document.getElementById('headshot').src = CONFIG.photo;
 
-    // Tone toggle: playful <-> serious confession
-    let serious = false;
-    function toggleTone(){
-      serious = !serious;
-      const pledge = document.getElementById('pledge');
-      const big = document.getElementById('bigLine');
-      const status = document.querySelector('.status-text');
-      const face = document.getElementById('face');
-      const meter = document.getElementById('meter');
-
-      if(serious){
-        pledge.innerHTML = "After careful reflection and peer‑review (Cameron counted), I accept that my decision‑making often trends toward premium‑grade sucker moves. I will strive to improve—tomorrow.";
-        big.innerHTML = "This is my official record. Hold me accountable.";
-        status.textContent = "Admitted Sucker";
-        face.textContent = "🫡";
-        meter.textContent = "VERIFIED";
-      } else {
-        pledge.innerHTML = "From impulse buys to losing bets with my brother, I consistently demonstrate elite, world‑class <strong>sucker</strong> energy. And I own it.";
-        big.innerHTML = "“I'm not just a sucker — I'm <em>the</em> sucker.”";
-        status.textContent = "Certified Sucker";
-        face.textContent = "😏";
-        meter.textContent = "MAX";
-      }
-    }
-
-    // Client-side export: turn the card into a PNG (simple foreignObject approach)
-    async function downloadPNG(){
-      const el = document.querySelector('.card');
-      const rect = el.getBoundingClientRect();
-      const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${rect.width}' height='${rect.height}'>\n        <foreignObject width='100%' height='100%'>${new XMLSerializer().serializeToString(el)}</foreignObject>\n      </svg>`;
-      const blob = new Blob([svg], {type:'image/svg+xml;charset=utf-8'});
-      const url = URL.createObjectURL(blob);
-      const img = new Image();
-      img.onload = ()=>{
-        const canvas = document.createElement('canvas');
-        canvas.width = rect.width * 2; canvas.height = rect.height * 2;
-        const ctx = canvas.getContext('2d');
-        ctx.scale(2,2);
-        ctx.fillStyle = getComputedStyle(document.body).backgroundColor;
-        ctx.fillRect(0,0,rect.width,rect.height);
-        ctx.drawImage(img,0,0);
-        URL.revokeObjectURL(url);
-        const a = document.createElement('a');
-        a.download = 'nolan-sucker-statement.png';
-        a.href = canvas.toDataURL('image/png');
-        a.click();
-      };
-      img.onerror = ()=> alert('PNG export not supported in this browser. Try Chrome or Firefox.');
-      img.src = url;
-    }
-
-    // Fun: rotate through playful one-liners
-    const lines = [
-      'Sucker level: MAX',
-      'World champion of “just one more bet”',
-      'Impulse‑buy connoisseur',
-      'Professional sibling‑rivalry participant',
-      'Certified by the Council of Friendly Roasts'
-    ];
-    let i = 0;
-    setInterval(()=>{
-      i = (i + 1) % lines.length;
-      document.getElementById('oneLiner').innerHTML = lines[i];
-    }, 3000);
+      // Notes list
+      const ul = document.getElementById('notes');
+      if (CONFIG.notes && CONFIG.notes.length) {
+        ul.innerHTML = CONFIG.notes.map(n => `<li>${n}</li>`).join('');
+   : 1
+      }) ();
   </script>
 </body>
+
 </html>
